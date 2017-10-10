@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css" type = "text/css"/>
   <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
   
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
@@ -141,6 +142,12 @@ position:relative;
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
    border-color: none !important;
 }
+.custom_footer{
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  margin-right: auto;
+  margin-left: 2% !important;
+}
 @media (max-height:518px){
   .parallax{
         min-height: 517px;
@@ -158,6 +165,7 @@ position:relative;
 
   <div class="slide1 parallax container-fluid ">
     <div class="darkened">
+    <small class="lead" style="background-color: transparent; bottom: 0; left: 0; position: absolute; padding-left: .5%; color: white; font-size: 10px;"> Photo taken by <a href="https://storror.com">@storror</a></small>
      <nav class="navbar navbar-expand-lg navbar-light bg-clear navbar-static-top flex-wrap">
     <a class="navbar-brand mx-auto color-change" href="#">Thomas Tran</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
@@ -166,7 +174,7 @@ position:relative;
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link color-change" href="#">CV</a>
+          <a class="nav-link color-change" href="ThomasTranResume_.pdf">CV</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link color-change" href="#">Contact</a>
@@ -191,10 +199,26 @@ position:relative;
   </div>
   <div class="slide2 parallax container-fluid">
     <div class="darkened">
-      
+       <div id="section1" class="container-fluid section-body body-text mx-auto my-auto" style="vertical-align: middle; height: 100%; padding-top: 20%;">
+        <div id="feature1">
+          <h6 class="display-4"> Contact Information <span class="oi oi-people iconic-size-sm" title="icon name" aria-hidden="true" style="width: 10px !important; height: 10px !important;"></span></h6>
+        </div>
+        <p class="lead my-auto" ><strong>Email: </strong> tat022@ucsd.edu <br>
+        <strong> Phone Number: </strong> 858-999-4426<br>
+        </p>
+        
+      </div>
     </div>
     </div>
-
+<footer class="bd-footer text-muted bg-dark">
+  <div class="container p-3 p-md-5 custom_footer">
+    <h2 class="display-4" style="font-size: 20px;">Get in touch.</h2>
+    <p class="lead" style="font-size: 15px;">For anything to everything.</p>
+    <br class="featurette-divider">
+    <p class="lead" style="font-size: 15px;">Designed and built by Thomas Tran | Created with the help of <a href="https://getbootstrap.com/fat" target="_blank" rel="noopener">Bootstrap</a>. | Github (<a href="https://github.com/thomasatran">@thomasatran</a>) | tat022@ucsd.edu 
+    </p> 
+  </div>
+</footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
